@@ -1,0 +1,34 @@
+.SecondExample {
+  height: 32rem;
+  margin-bottom: 1rem;
+}
+.SecondExample > div:nth-child(1) {
+  height: 30rem;
+}
+.Project {
+  max-width: 100%;
+  position: relative;
+  height: 30rem;
+  overflow: hidden;
+}
+.SecondExample {
+  color: white !important;
+}
+
+.CheckButton {
+  margin-top: 40px !important;
+  color: white !important;
+  border: 3px solid white !important;
+  text-transform: capitalize !important;
+}
+@media (max-width: 480px) {
+  .SecondExample {
+    height: 16rem;
+  }
+  .SecondExample > div:nth-child(1) {
+    height: 14rem;
+  }
+  .Project {
+    height: 14rem;
+  }
+}

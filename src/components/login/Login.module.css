@@ -1,0 +1,48 @@
+.loginContainer {
+  width: calc(100% - 2rem);
+  min-height: 50vh;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-top: 3px;
+  padding-bottom: 224px;
+  opacity: 1;
+  /* color: rgb(52, 71, 103); */
+  background: linear-gradient(
+        310deg,
+        rgba(20, 23, 39, 0.6),
+        rgba(58, 65, 111, 0.6)
+      )
+      center center / cover no-repeat,
+    url("https://demos.creative-tim.com/soft-ui-dashboard-pro-react/marketplace/static/media/curved9.ec7010fa.jpg")
+      transparent;
+
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.smallText {
+  font-size: 16px;
+  color: white;
+  /* width: 80%; */
+  margin: auto;
+  margin-bottom: 4rem;
+}
+.loginContainer h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: white;
+}
+.bottomContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}

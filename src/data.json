@@ -1,0 +1,193 @@
+{
+  "message": "Data Fetched Successfully",
+  "data": [
+    {
+      "_id": "62245b8b1576a1f745d337a0",
+      "domainName": "Engineering",
+      "subDomains": [
+        {
+          "name": "Electronics",
+          "description": "Life without devices is not possible today. It is hard to believe in a life without gadgets. Also, there is no place left where the use of devices doesn’t appear. Hence This is the only reason behind the rapid growth in this field. It is one of the most popular fields. Also, They have to build designs of devices such as navigators, motors etc. There is huge scope in career for electronics and communication engineer. This is an important job. This industry has sprung up to meet their customer’s needs. They create what is used to monitor processes in many areas. Problem-solving skills, a sharp mind, and a keen interest are all that is required.",
+          "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1xHFSOoGl7XcmSE40bdAb6y_5p9ETuEb5Pw&usqp=CAU",
+          "_id": "62245b8b1576a1f745d337a1"
+        },
+        {
+          "name": "Civil Engineering",
+          "description": "Civil engineers design major transportation projects. Civil engineers conceive, design, build, supervise, operate, construct and maintain infrastructure projects and systems in the public and private sector, including roads, buildings, airports, tunnels, dams, bridges, and systems for water supply and sewage treatment.Locally, the demand for Civil Engineers depends on the current state of the construction industry. A construction boom will spur the demand for Civil Engineers and other skilled construction workers. Government spending on infrastructure will likewise push the demand for this type of workers. Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewage systems, pipelines, structural components of buildings, and railways.",
+          "imageUrl": "https://meiwandoor.com/wp-content/uploads/2021/06/3faf92b0ec8e7803f92e24068d04734e.jpg",
+          "_id": "62246bfe1576a1f745d338d4"
+        },
+        {
+          "name": "Civil/Architect Engineer",
+          "description": "An architectural engineer uses the latest scientific knowledge and technologies to design and develop structurally sound buildings that add value to a community. In their work, they consider essential factors like comfort, sustainability and safety.Architects spend much of their time in offices, where they develop plans, meet with clients, and consult with engineers and other architects. They also visit construction sites to prepare initial drawings and review the progress of projects to ensure that clients objectives are met.",
+          "imageUrl": "https://www.indiaeducation.net/imagesvr_ce/911/zCYDjZ3xcRi5QsA6MVBpC3o3.jpeg",
+          "_id": "62246cbb1576a1f745d33905"
+        },
+        {
+          "name": "Mechanical Engineer",
+          "description": "Mechanical engineers in India are in high demand due to the rapid industrialisation of the nation. Job prospects for skilled mechanical engineers are limitless in India and abroad. Students are actively recruited by private and public sectors in various industries. There is a huge scope of mechanical engineering in all kinds of manufacturing industries, aerospace engineering, automotive industries, government organizations, Public Welfare Departments and defense sector as they seek mechanical engineers and offer a good salary with growth opportunities to B. Tech graduates.",
+          "imageUrl": "https://i.ytimg.com/vi/HXNgpnPReN0/maxresdefault.jpg",
+          "_id": "62246d2c1576a1f745d33914"
+        },
+        {
+          "name": "Pilot",
+          "description": "A person who operates the flying controls of an aircraft.",
+          "imageUrl": "https://skift.com/wp-content/uploads/2017/09/compass-airlines-1024x683.jpg",
+          "_id": "62246f4f1576a1f745d33990"
+        } 
+      ],
+      "desc": "Engineering is the application of science and mathematics to solve problems. Engineers figure out how things work and find practical uses for scientific discoveries. Scientists and inventors often get the credit for innovations that advance the human condition, but it is engineers who are instrumental in making those innovations available to the world.\r\nThe art or science of making practical application of the knowledge of pure sciences, as physics or chemistry, as in the construction of engines, bridges, buildings, mines, ships, and chemical plants.",
+      "createdAt": "2022-03-06T06:58:19.605Z",
+      "updatedAt": "2022-03-06T08:22:39.042Z",
+      "__v": 8
+    },
+    {
+      "_id": "622466c31576a1f745d337c6",
+      "domainName": "Computer Science & It",
+      "subDomains": [
+        {
+          "name": "Software Engineering",
+          "description": "Software engineering is an engineering approach on a software development of systematics application. A software engineer is a person who applies the principles of software engineering to design, develop, maintain, test, and evaluate computer software.\r\n",
+          "imageUrl": "https://www.elmhurst.edu/wp-content/uploads/2019/11/software-developer-vs-software-engineer-illustration.jpg",
+          "_id": "622466c31576a1f745d337c7"
+        },
+        {
+          "name": "Data scientist",
+          "description": "A data scientist is a professional responsible for collecting, analyzing and interpreting extremely large amounts of data. The data scientist role is an offshoot of several traditional technical roles, including mathematician, scientist, statistician and computer professional. This job requires the use of advanced analytics technologies, including machine learning and predictive modelling.",
+          "imageUrl": "https://www.springboard.com/library/static/b2cd05116fc1151aae9af49289bb8520/c1b63/10-12-how-is-data-science-used-in-finance.png",
+          "_id": "622467291576a1f745d337d1"
+        },
+        {
+          "name": "Cloud Technician",
+          "description": "A cloud engineer is an IT professional responsible for any technological duties associated with cloud computing, including design, planning, management, maintenance and support. Cloud engineer is a general term encompassing a few different roles, including: cloud architect.",
+          "imageUrl": "https://thetechwide.com/wp-content/uploads/2021/12/cloud-g24eea2eba_640-1.jpg",
+          "_id": "6224677d1576a1f745d337e8"
+        },
+        {
+          "name": "Cyber Security",
+          "description": "Cyber security is the application of technologies, processes and controls to protect systems, networks, programs, devices and data from cyber attacks. It aims to reduce the risk of cyber attacks and protect against the unauthorised exploitation of systems, networks and technologies.",
+          "imageUrl": "https://www.york.ac.uk/media/study/courses/postgraduate/computerscience/cyber%20security%20banner.jpg",
+          "_id": "622467be1576a1f745d337ee"
+        }
+      ],
+      "desc": "Computer science is the study of computers and computing as well as their theoretical and practical applications. Computer science applies the principles of mathematics, engineering, and logic to a plethora of functions, including algorithm formulation, software and hardware development, and artificial intelligence.",
+      "createdAt": "2022-03-06T07:46:11.962Z",
+      "updatedAt": "2022-03-06T07:50:22.997Z",
+      "__v": 3
+    },
+    {
+      "_id": "622468661576a1f745d3380e",
+      "domainName": "Others",
+      "subDomains": [
+        {
+          "name": "Sound Technician",
+          "description": "As a sound technician, it's your responsibility to assemble, operate and maintain the technical equipment used to record, amplify, enhance, mix or reproduce sound. You'll identify the sound requirements for a given task or situation and perform the appropriate actions to produce this sound.",
+          "imageUrl": "https://www.sheffieldav.com/sites/default/files/Best-Audio-Engineering-Schools.jpg",
+          "_id": "622468661576a1f745d3380f"
+        }
+      ],
+      "desc": "",
+      "createdAt": "2022-03-06T07:53:10.759Z",
+      "updatedAt": "2022-03-06T07:53:10.759Z",
+      "__v": 0
+    },
+    {
+      "_id": "6224693e1576a1f745d3384a",
+      "domainName": "Business",
+      "subDomains": [
+        {
+          "name": "Industrialist",
+          "description": "A business magnate is a person who has achieved enormous wealth through the ownership of multiple lines of enterprise.",
+          "imageUrl": "https://play-lh.googleusercontent.com/nDgeCGEONkeDvAt7cUWbSceetFsdiRvfX_SQlVMNdaKCYdb9oApfAgiJGqlnFjlp1TU",
+          "_id": "6224693e1576a1f745d3384b"
+        },
+        {
+          "name": "Business with DataScience",
+          "description": "Data science can add value to any business who can use their data well. From statistics and insights across workflows and hiring new candidates, to helping senior staff make better-informed decisions, data science is valuable to any company in any industry. Analysts have predicted that there will be more than 11 million job openings by 2026. India will witness a savage era of technology-driven businesses in upcoming years.",
+          "imageUrl": "https://kenprolearning.com/wp-content/uploads/2020/01/Vintage-Logotype-Etsy-Banner.png",
+          "_id": "62246af41576a1f745d3388b"
+        },
+        {
+          "name": "Economist",
+          "description": "Banking careers are very popular with economics graduates, offering scope for high earnings and have a high demand for economists. Graduates with a background in economics are particularly valued for roles in financial control, financial planning, risk analysis, data analysis and consultancy. An economics graduate will have some unique and highly sought-after skills and in most cases, employment prospects are good. A lot of professionals in banking and accountancy hold economics degrees",
+          "imageUrl": "https://cdn.corporatefinanceinstitute.com/assets/economists-1024x717.jpeg",
+          "_id": "62246fa51576a1f745d33995"
+        },
+        {
+          "name": "CEO/Head-Management",
+          "description": "CEOs are responsible for managing a company's overall operations. This may include delegating and directing agendas, driving profitability, managing company organizational structure, strategy, and communicating with the board. While a CEO may represent the company's public image, they are also the highest-ranking superior at a company, and a managing director handles the company's day-to-day operations and ensures everything runs as efficiently as possible.",
+          "imageUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fuxdesign.cc%2Fproven-strategies-to-get-your-boss-to-support-ux-6a278755aa4c&psig=AOvVaw23pIi9dND7s0v0IYR-d1MW&ust=1646641486494000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKj8i-GHsfYCFQAAAAAdAAAAABAD",
+          "_id": "622470171576a1f745d3399b"
+        },
+        {
+          "name": "Entrepreneur",
+          "description": "A person who sets up a business or businesses, taking on financial risks in the hope of profit.",
+          "imageUrl": "https://dcid.sanford.duke.edu/wp-content/uploads/sites/7/2020/03/Importance-of-entrepreneurship.png",
+          "_id": "6224702d1576a1f745d339a2"
+        },
+        {
+          "name": "Corporate laws",
+          "description": "After pursuing degree in corporate law, you can get job placements in law firms, insurers, banks, asset managers, etc. If you are interested in teaching field, you can become or appointed as a Teacher or Lecturer in colleges or universities after completing the masters degree in corporate law.Working as a corporate lawyer can be a very rewarding and lucrative career path. You have to study for many years, so be prepared for hard work and sacrifice. You will need to get qualified, gain experience, and then continue your professional development and study for your specialism in corporate law.",
+          "imageUrl": "https://boardmember.com/wp-content/uploads/2018/07/corporatelaw-1024x682.jpg",
+          "_id": "622470c51576a1f745d339e0"
+        }
+      ],
+      "desc": "Business is the activity of making one's living or making money by producing or buying and selling products (such as goods and services). Simply put, it is any activity or enterprise entered into for profit.\n\nHaving a business name does not separate the business entity from the owner, which means that the owner of the business is responsible and liable for debts incurred by the business. If the business acquires debts, the creditors can go after the owner's personal possessions. A business structure does not allow for corporate tax rates. The proprietor is personally taxed on all income from the business.\n\nThe term is also often used colloquially (but not by lawyers or by public officials) to refer to a company. A company, on the other hand, is a separate legal entity and provides for limited liability, as well as corporate tax rates. A company structure is more complicated and expensive to set up, but offers more protection and benefits for the owner.",
+      "createdAt": "2022-03-06T07:56:46.552Z",
+      "updatedAt": "2022-03-06T08:28:53.981Z",
+      "__v": 5
+    },
+    {
+      "_id": "6224699f1576a1f745d33858",
+      "domainName": "Medical Science",
+      "subDomains": [
+        {
+          "name": "Bachelor of Physiotherapy",
+          "description": "BPT or Bachelor of Physiotherapy is a four-year undergraduate professional course that deals with the science of physical movement and channelising it to prevent disability and diseases of movement.",
+          "imageUrl": "https://qph.fs.quoracdn.net/main-qimg-46413348045b42e860e02834574baf88-lq",
+          "_id": "6224699f1576a1f745d33859"
+        },
+        {
+          "name": "General Medicine",
+          "description": "General medicine is the medical specialty dedicated to the prevention, diagnosis and treatment of adult diseases. By definition it is an all embracing discipline concerning itself with all aspects of pathology and all the organ based specialties.",
+          "imageUrl": "https://www.pacificmedicalsciences.ac.in/img/Departments/PageImage/General%20Medicine_Dpage.png",
+          "_id": "62246a3e1576a1f745d3387c"
+        },
+        {
+          "name": "Nurse",
+          "description": "A person trained to care for the sick or infirm, especially in a hospital.",
+          "imageUrl": "https://149717935.v2.pressablecdn.com/wp-content/uploads/2021/09/how-to-become-a-nurse-hero-1200x628-1.jpg",
+          "_id": "62246b421576a1f745d338a8"
+        },
+        {
+          "name": "Bachelor of Dental Surgery",
+          "description": "Dental surgery is any of a number of medical procedures that involve artificially modifying dentition; in other words, surgery of the teeth, gums and jaw bones.",
+          "imageUrl": "https://www.edentalperth.net.au/wp-content/uploads/2021/03/Treat-Patient-Like-Family-Code-Of-Ethics.jpg",
+          "_id": "62246c261576a1f745d338da"
+        },
+        {
+          "name": "Homeopathy medicine ",
+          "description": "Homeopathy is a medical system based on the belief that the body can cure itself. Those who practice it use tiny amounts of natural substances, like plants and minerals. They believe these stimulate the healing process.",
+          "imageUrl": "https://www.verywellhealth.com/thmb/w4rnZvkIdeA7ukWSA5f2pXnyNiM=/3663x2060/smart/filters:no_upscale()/homeopathic-medicine-and-herbs-594837609-577e8b893df78cb62c9e24eb.jpg",
+          "_id": "62246c8c1576a1f745d338ff"
+        },
+        {
+          "name": "Vetinary",
+          "description": "Veterinarians treat the injuries and illnesses of pets and other animals with a variety of medical equipment, including surgical tools and x-ray and ultrasound machines",
+          "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO-hpACdJfMENHe26wu0RKFW0FDKIYZPpDkGL2JL_gw7cHeMiJE4xrt5dDCSyTbnLUdAs&usqp=CAU",
+          "_id": "62246cf31576a1f745d3390d"
+        },
+        {
+          "name": "Master of surgery",
+          "description": "The Master of Surgery is the most advanced qualification in surgery. Depending upon the degree, it may be abbreviated ChM, MCh, MChir or MS. At a typical medical school the program lasts between two and three years. The possession of a medical degree is a prerequisite.",
+          "imageUrl": "https://img.collegedekhocdn.com/media/img/careers/master-of-chirurgiae-icon.jpg",
+          "_id": "62246e1b1576a1f745d33974"
+        }
+      ],
+      "desc": " The science of dealing with the maintenance of health and the prevention and treatment of disease",
+      "createdAt": "2022-03-06T07:58:23.356Z",
+      "updatedAt": "2022-03-06T08:17:31.762Z",
+      "__v": 6
+    }
+  ]
+}

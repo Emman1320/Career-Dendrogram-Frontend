@@ -1,0 +1,27 @@
+.heroImage {
+  width: calc(100% - 2rem);
+  height: 487px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-top: 3px;
+  padding-bottom: 224px;
+  opacity: 1;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.45) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    center center / cover no-repeat,
+    url("https://images.hdqwalls.com/wallpapers/desktop-abstract-2020-4k-mm.jpg"),
+    transparent;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  background-position: left center;
+  background-repeat: no-repeat;
+}

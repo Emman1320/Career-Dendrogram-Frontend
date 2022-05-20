@@ -1,0 +1,42 @@
+.link a {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-decoration: none;
+  color: rgb(131, 146, 171);
+  cursor: pointer;
+}
+.footerContainer {
+  padding-top: 55px;
+  padding-bottom: 48px;
+  background: transparent;
+  color: rgb(52, 71, 103);
+}
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.socialMediaContainer {
+  padding-top: 48px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.socialMediaContainer path {
+  color: rgb(131, 146, 171);
+}
+@media (max-width: 700px) {
+  .link a {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 500px) {
+  .links {
+    gap: 20px;
+  }
+  .link a {
+    font-size: 1rem;
+  }
+}

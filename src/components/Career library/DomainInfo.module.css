@@ -1,0 +1,59 @@
+.domainAbout {
+  width: calc(100% - 2rem);
+  color: rgba(0, 0, 0, 0.87);
+  animation: opening 0.7s cubic-bezier(0, 0, 0.1, 1) forwards;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  overflow: hidden;
+  display: flex;
+  padding: 2rem 1.7rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
+  overflow-wrap: break-word;
+  background-color: rgb(255, 255, 255);
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1rem;
+  box-shadow: rgb(0 0 0 / 10%) 0rem 1.25rem 1.6875rem 0rem;
+}
+.domainImage img {
+  border-radius: 1rem;
+  width: 400px;
+  height: 300px;
+  box-shadow: rgb(0 0 0 / 10%) 0rem 1.25rem 1.6875rem 0rem;
+  object-fit: cover;
+}
+.domainAbout h1 {
+  font-size: 45px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  font-weight: 500;
+  /* color:; */
+  margin-top: 10px;
+}
+.domainDesc {
+  letter-spacing: 0.1px;
+  line-height: 1.6;
+}
+@media (max-width: 1000px) {
+  .domainAbout {
+    flex-direction: column;
+  }
+  .domainImage img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .domainImage img {
+    height: 250px;
+  }
+
+  .domainAbout h1 {
+    margin: 10px 0;
+    font-size: 40px;
+    text-align: center;
+  }
+  .domainInfoContainer {
+      margin-top: 1rem
+  }
+}

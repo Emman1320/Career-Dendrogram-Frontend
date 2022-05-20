@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kavivanar&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif !important;
+}
+body {
+  margin: 0;
+  background-color: rgb(248, 249, 250);
+}
+
+button,
+label,
+input,
+p,
+li,
+span,
+a {
+  font-family: "Montserrat", sans-serif !important;
+}
+.css-16awh2u-MuiAutocomplete-root .MuiAutocomplete-tag {
+  margin: 5px 3px !important;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+@media (max-width: 400px) {
+  html {
+    zoom: 0.88;
+  }
+}

@@ -1,0 +1,265 @@
+.career_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 450px;
+  font-size: 0.9rem;
+  height: 250px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card.green .additional {
+  background: linear-gradient(#92bca6, #a2ccb6);
+}
+
+.card.mouseOver .additional {
+  animation: onHover 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.card.mouseLeave .additional {
+  animation: onLeave 0.8s cubic-bezier(0, 0, 0, 1) forwards;
+}
+
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0, 0, 0, 0.025);
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+.card .additional .user-card svg {
+  top: 50%;
+}
+
+.card .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.card .additional .more-info h1 {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.card.green .additional .more-info h1 {
+  color: #224c36;
+}
+
+.card .additional .coords {
+  margin: 0 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.card.green .additional .coords {
+  color: #325c46;
+}
+
+.card .additional .coords span + span {
+  float: right;
+}
+
+.card .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #fff;
+}
+
+.card.green .additional .stats {
+  color: #325c46;
+}
+
+.card .additional .stats > div {
+  flex: 1;
+  text-align: center;
+}
+
+.card .additional .stats i {
+  display: block;
+}
+
+.card .additional .stats div.title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card .additional .stats div.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.card .additional .stats div.value.infinity {
+  font-size: 2.5rem;
+}
+
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+}
+
+.formContainer {
+  padding-left: 8px;
+  padding-right: 8px;
+  width: calc(100% - 2rem);
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+  background: transparent;
+  margin-top: -208px;
+  color: rgb(52, 71, 103);
+}
+.form {
+  width: 70%;
+  color: rgba(0, 0, 0, 0.87);
+  animation: opening 0.7s cubic-bezier(0, 0, 0.1, 1) forwards;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  overflow: hidden;
+  display: flex;
+  padding: 1rem 1.7rem;
+  padding-bottom: 2rem;
+  flex-direction: column;
+  position: relative;
+  overflow-wrap: break-word;
+  background-color: rgb(255, 255, 255);
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1rem;
+  box-shadow: rgb(0 0 0 / 10%) 0rem 1.25rem 1.6875rem 0rem;
+}
+@keyframes opening {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@media (max-width: 1000px) {
+  .form {
+    width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  .form {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+    box-shadow: none;
+    font-size: 0.9rem;
+    border-radius: 0;
+  }
+  .formContainer {
+    padding: 0;
+    width: 100%;
+  }
+}
+@keyframes onHover {
+  0% {
+    background-color: #de685e;
+    border-radius: 0;
+    width: 150px;
+  }
+  100% {
+    width: 190%;
+    border-radius: 0 50% 50% 0;
+    background-color: #de685e;
+  }
+}
+@keyframes onLeave {
+  0% {
+    background-color: #de685e;
+    width: 190%;
+    border-radius: 0;
+  }
+  100% {
+    width: 150px;
+    border-radius: 0;
+    background-color: #de685e;
+  }
+}

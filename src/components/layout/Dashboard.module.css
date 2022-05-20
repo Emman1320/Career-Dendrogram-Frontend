@@ -1,0 +1,436 @@
+.dashboardContainer {
+  width: calc(100% - 2rem);
+  height: 487px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-top: 3px;
+  padding-bottom: 224px;
+  opacity: 1;
+  background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      )
+      center center / cover no-repeat,
+    url("https://images.hdqwalls.com/wallpapers/desktop-abstract-2020-4k-mm.jpg")
+      transparent;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.inside {
+  transform: translateY(100%);
+}
+
+.login_image {
+  background: linear-gradient(
+        310deg,
+        rgba(20, 23, 39, 0.6),
+        rgba(58, 65, 111, 0.6)
+      )
+      center center / cover no-repeat,
+    url("https://demos.creative-tim.com/soft-ui-dashboard-pro-react/marketplace/static/media/curved9.ec7010fa.jpg")
+      transparent;
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.smallText {
+  font-size: 16px;
+  color: white;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+.dashboardContainer h1 {
+  font-size: 45px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: white;
+}
+.dashboardContainer h1 .inside {
+  animation: enterIn 0.8s cubic-bezier(0, 0, 0.1, 1) forwards;
+}
+.smallText .inside {
+  animation: enterIn 0.8s 0.4s cubic-bezier(0, 0, 0.1, 1) forwards;
+}
+.predictCareer_rev.dashboardContainer h1 .inside {
+  animation: enterIn 0.8s 0.4s cubic-bezier(0, 0, 0.1, 1) forwards;
+}
+.predictCareer_rev .smallText .inside {
+  animation: enterIn 0.8s 0.8s cubic-bezier(0, 0, 0.1, 1) forwards;
+}
+.bottomContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+.bottomTriangle {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  border-right: 92rem solid transparent;
+  border-bottom: 0rem solid rgb(248, 249, 250);
+  left: 0;
+  bottom: 0;
+}
+.signIn .bottomTriangle {
+  border-bottom: 0 solid rgb(248, 249, 250);
+  animation: bottomTriangle 1s ease forwards;
+}
+.home .bottomTriangle {
+  border-bottom: 17rem solid rgb(248, 249, 250);
+  animation: bottomTriangle_rev 1s ease forwards;
+}
+.signIn .smallText {
+  margin: 0;
+  margin-left: auto;
+}
+.signIn .bottomContainer {
+  width: 100%;
+  text-align: end;
+  margin-right: 13rem;
+  margin-top: 5rem;
+}
+.predictCareer {
+  padding-bottom: 0px;
+}
+.dashboardContainer.homeAnimation .inside {
+  transform: translateY(0);
+  animation: enterOut 0.5s ease forwards;
+}
+.dashboardContainer.predictCareer {
+  animation: height 0.4s ease forwards;
+}
+.dashboardContainer.predictCareer_rev {
+  animation: height_rev 0.5s ease forwards;
+}
+.predictCareerOpening {
+  padding-bottom: 0px;
+  height: 69px;
+}
+.predictCareer .bottomContainer {
+  opacity: 0;
+}
+@media (max-width: 1368px) {
+  @keyframes bottomTriangle_small {
+    0% {
+      border-bottom: 0 solid rgb(248, 249, 250);
+    }
+    100% {
+      border-bottom: 19.5rem solid rgb(248, 249, 250);
+    }
+  }
+  @keyframes bottomTriangle_rev_small {
+    0% {
+      border-bottom: 19.5rem solid rgb(248, 249, 250);
+    }
+    100% {
+      border-bottom: 0 solid rgb(248, 249, 250);
+    }
+  }
+  .signIn .bottomTriangle {
+    border-right: 81.5rem solid transparent;
+    border-bottom: 0 solid rgb(248, 249, 250);
+    animation: bottomTriangle_small 1s ease forwards;
+  }
+  .home .bottomTriangle {
+    animation: bottomTriangle_rev_small 1s ease forwards;
+  }
+  .dashboardContainer.home .bottomTriangle {
+    border-bottom: 19.5rem solid rgb(248, 249, 250);
+  }
+  .bottomTriangle {
+    border-right: 81.5rem solid transparent;
+  }
+}
+@keyframes enterIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes bottomTriangle {
+  0% {
+    border-bottom: 0 solid rgb(248, 249, 250);
+  }
+  100% {
+    border-bottom: 17rem solid rgb(248, 249, 250);
+  }
+}
+@keyframes bottomTriangle_rev {
+  0% {
+    border-bottom: 17rem solid rgb(248, 249, 250);
+  }
+  100% {
+    border-bottom: 0 solid rgb(248, 249, 250);
+  }
+}
+@keyframes enterOut {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes height {
+  0% {
+    height: 487px;
+  }
+  100% {
+    height: 69px;
+  }
+}
+@keyframes height_rev {
+  0% {
+    height: 69px;
+    padding-bottom: 0;
+  }
+  100% {
+    height: 487px;
+    padding-bottom: 224px;
+  }
+}
+@keyframes height_mobile {
+  0% {
+    height: 438px;
+  }
+  100% {
+    height: 61px;
+  }
+}
+@keyframes height_rev_mobile {
+  0% {
+    height: 61px;
+    padding-bottom: 0;
+  }
+  100% {
+    height: 438px;
+    padding-bottom: 224px;
+  }
+}
+@keyframes display {
+  0% {
+    display: none;
+  }
+  100% {
+    display: flex;
+  }
+}
+@media (max-width: 1000px) {
+  .signIn .bottomContainer {
+    margin-right: 5rem;
+    margin-top: 0rem;
+  }
+  .smallText {
+    font-size: 14px;
+  }
+  .dashboardContainer h1 {
+    font-size: 40px;
+  }
+
+  .predictCareerOpening {
+    height: 69px;
+  }
+  .signIn .bottomTriangle {
+    border-right: 62rem solid transparent;
+  }
+}
+@media (max-width: 1000px) and (min-width: 600px) {
+  .careerPath {
+    height: 438px;
+  }
+  .subDomain {
+    height: 69px;
+  }
+}
+@media (max-width: 600px) {
+  .predictCareerOpening {
+    height: 61px;
+  }
+  .dashboardContainer h1 {
+    font-size: 38px;
+  }
+  .dashboardContainer {
+    margin: 0;
+    width: 100%;
+    background-position: center top;
+    border-radius: 0;
+  }
+  .dashboardContainer.predictCareer {
+    animation: height_mobile 0.4s ease forwards;
+  }
+  .dashboardContainer.predictCareer_rev {
+    animation: height_rev_mobile 0.5s ease forwards;
+  }
+}
+.navCards {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.navCards.homeAnimation {
+  transform: translateY(0);
+  opacity: 0;
+  animation: enterOut 0.5s ease forwards;
+}
+@media (max-width: 950px) {
+  .navCards {
+    gap: 3rem;
+  }
+}
+@media (max-width: 750px) {
+  .navCards {
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 550px) {
+  .navCards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10rem;
+  }
+}
+.careerPath {
+  align-items: flex-start;
+}
+.careerPath .bottomContainer {
+  text-align: start;
+  gap: 2rem;
+  padding: 3.3rem;
+}
+.careerPath .smallText {
+  margin: 0;
+  letter-spacing: 0.1px;
+  line-height: 1.6;
+}
+@media (min-width: 1400px) {
+  .careerPath .bottomContainer {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  .careerPath .bottomContainer {
+    padding-top: 0;
+  }
+}
+@media (max-width: 600px) {
+  .careerPath .bottomContainer {
+    gap: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .careerPath .bottomContainer {
+    gap: 0rem;
+    padding: 0 1.5rem;
+  }
+  .careerPath .bottomContainer h1 {
+    margin-top: 10px;
+  }
+  .careerPath .smallText {
+    font-size: 13px;
+  }
+  .Business.dashboardContainer {
+    height: 70%;
+  }
+}
+.Engineering {
+  background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      )
+      center center / cover no-repeat,
+    url("https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+      transparent;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Engineering {
+  background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      )
+      center center / cover no-repeat,
+    url("https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+      transparent;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Computer {
+  background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      )
+      center center / cover no-repeat,
+    url("https://rca-media2.rca.ac.uk/images/CSRC.original.2e16d0ba.fill-1440x530.jpg")
+      transparent;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Business {
+  background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      )
+      center center / cover no-repeat,
+    url("https://cdn.corporatefinanceinstitute.com/assets/Types-of-Businesses-Opener_v2.jpeg")
+      transparent;
+  background-position: left center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+
+  background-size: cover;
+}
+.Medical {
+  background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      )
+      center center / cover no-repeat,
+    url("https://d2poqm5pskresc.cloudfront.net/wp-content/uploads/2019/10/Digitally-Transforming-Healthcare-Lifecycle.jpg")
+      transparent;
+  background-position: left center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+
+  background-size: cover;
+}
+.Others {
+  background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      )
+      center center / cover no-repeat,
+    url("https://www.riaa.com/wp-content/uploads/2016/02/482216347x.jpg")
+      transparent;
+  background-position: left center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+  background-size: cover;
+}
