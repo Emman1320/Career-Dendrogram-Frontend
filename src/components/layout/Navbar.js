@@ -71,11 +71,12 @@ const ListButton = (props) => (
   </ListItem>
 );
 
-export default function Navbar(props) {
+export default React.memo(function Navbar(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
   let navigate = useNavigate();
+  const searchRef = React.useRef();
   let location = useLocation();
 
   const isMenuOpen = Boolean(anchorEl);
@@ -90,19 +91,29 @@ export default function Navbar(props) {
 
   const openLoginPage = () => {
     handleMenuClose();
-    if (props.pathname !== "/login") props.onEnterOut();
-    if (props.pathname === "/predict-career") navigate("/login");
+    if (location.pathname !== "/login") props.onEnterOut();
+    if (location.pathname === "/predict-career") navigate("/login");
     else
       setTimeout(() => {
         navigate("/login");
       }, 400);
   };
-  const predictCareerHandler = () => {
-    if (user.isLoggedIn)
-      if (user.userPath.prediction.length || user.userPath.path.length)
-        navigate("/predict-career/pathway");
-      else navigate("/predict-career");
-    else openLoginPage();
+  // const predictCareerHandler = () => {
+  //   if (user.isLoggedIn)
+  //     if (user.userPath.prediction.length || user.userPath.path.length)
+  //       navigate("/predict-career/pathway");
+  //     else navigate("/predict-career");
+  //   else openLoginPage();
+  // };
+  React.useEffect(() => {}, [location.pathName]);
+  const onSearchHandler = (event) => {
+    dispatch(userActions.search(event.target.value));
+  };
+  const onEnterSearchBarHandler = () => {
+    if (location.pathname !== "/search") {
+      dispatch(userActions.search(""));
+      navigate("/search");
+    }
   };
   const menuId = "primary-search-account-menu";
   return (
@@ -134,21 +145,24 @@ export default function Navbar(props) {
                 </IconButton>
               )}
             </div>
-            <Search>
+            <Search onChange={onSearchHandler}>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>
               <StyledInputBase
+                onFocus={onEnterSearchBarHandler}
+                inputRef={searchRef}
                 sx={{ width: { sm: "30rem", xl: "40rem" } }}
                 placeholder="Search…"
+                autoFocus={location.pathname === "/search"}
                 inputProps={{ "aria-label": "search" }}
               />
             </Search>
-            <Box sx={{ display: window.innerWidth > 1000 ? "flex" : "none" }}>
+            {/* <Box sx={{ display: window.innerWidth > 1000 ? "flex" : "none" }}>
               <div className={classes.logo} onClick={predictCareerHandler}>
                 Predict your career
               </div>
-            </Box>
+            </Box> */}
             {user.isLoggedIn ? (
               <React.Fragment>
                 <Box
@@ -156,7 +170,7 @@ export default function Navbar(props) {
                 >
                   {user.userAuthInfo.name ? (
                     <div style={{ cursor: "text" }} className={classes.logo}>
-                      {`Hello, ${user.userAuthInfo.name}`}
+                      {`Hello,   ${user.userAuthInfo.name}`}
                     </div>
                   ) : null}
                 </Box>
@@ -173,11 +187,24 @@ export default function Navbar(props) {
                 </Box>
               </React.Fragment>
             ) : (
-              <Box sx={{ display: "flex" }}>
-                <div onClick={openLoginPage} className={classes.logo}>
-                  Login
-                </div>
-              </Box>
+              <React.Fragment>
+                <Box
+                  sx={{ display: window.innerWidth > 1000 ? "flex" : "none" }}
+                >
+                  {user.userAuthInfo.name ? (
+                    <div style={{ cursor: "text" }} className={classes.logo}>
+                      {`Hello, ${user.userAuthInfo.name}`}
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </Box>
+                <Box sx={{ display: "flex" }}>
+                  <div onClick={openLoginPage} className={classes.logo}>
+                    Login
+                  </div>
+                </Box>
+              </React.Fragment>
             )}
           </Toolbar>
         </AppBar>
@@ -267,4 +294,4 @@ export default function Navbar(props) {
       <Box></Box>
     </React.Fragment>
   );
-}
+});

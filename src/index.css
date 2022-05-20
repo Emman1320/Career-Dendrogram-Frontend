@@ -18,6 +18,7 @@ input,
 p,
 li,
 span,
+textarea,
 a {
   font-family: "Montserrat", sans-serif !important;
 }

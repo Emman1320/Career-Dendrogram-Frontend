@@ -4,7 +4,7 @@
     {
       "_id": "62245b8b1576a1f745d337a0",
       "domainName": "Engineering",
-      "subDomains": [
+      "subDomains": [ 
         {
           "name": "Electronics",
           "description": "Life without devices is not possible today. It is hard to believe in a life without gadgets. Also, there is no place left where the use of devices doesn’t appear. Hence This is the only reason behind the rapid growth in this field. It is one of the most popular fields. Also, They have to build designs of devices such as navigators, motors etc. There is huge scope in career for electronics and communication engineer. This is an important job. This industry has sprung up to meet their customer’s needs. They create what is used to monitor processes in many areas. Problem-solving skills, a sharp mind, and a keen interest are all that is required.",
@@ -114,7 +114,7 @@
           "_id": "62246fa51576a1f745d33995"
         },
         {
-          "name": "CEO/Head-Management",
+          "name": "CEO|Head-Management",
           "description": "CEOs are responsible for managing a company's overall operations. This may include delegating and directing agendas, driving profitability, managing company organizational structure, strategy, and communicating with the board. While a CEO may represent the company's public image, they are also the highest-ranking superior at a company, and a managing director handles the company's day-to-day operations and ensures everything runs as efficiently as possible.",
           "imageUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fuxdesign.cc%2Fproven-strategies-to-get-your-boss-to-support-ux-6a278755aa4c&psig=AOvVaw23pIi9dND7s0v0IYR-d1MW&ust=1646641486494000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKj8i-GHsfYCFQAAAAAdAAAAABAD",
           "_id": "622470171576a1f745d3399b"

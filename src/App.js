@@ -2,6 +2,10 @@ import React, { useCallback, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CareerPrediction from "./components/career prediction/CareerPrediction";
 import CareerPathway from "./components/career prediction/CareerPathway";
+import GlobalStyles from "./theme/globalStyles";
+import SamplePrediction from "./components/career prediction/SamplePrediction";
+import { BaseOptionChartStyle } from "./components/charts/BaseOptionChart";
+import ThemeConfig from "./theme";
 import Dashboard from "./components/layout/Dashboard";
 import Login from "./components/login/Login";
 import SignUp from "./components/login/SignUp";
@@ -11,11 +15,12 @@ import axios from "axios";
 import CareerLibrary from "./components/Career library/CareerLibrary";
 import CareerDomain from "./components/Career library/CareerDomain";
 import DomainInfo from "./components/Career library/DomainInfo";
+import SearchResults from "./components/layout/SearchResult";
 
 const App = () => {
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
-  const fetchUsersListHandler = useCallback(async () => {
+  const fetchCareerDataHandler = useCallback(async () => {
     axios
       .get("https://sih-api.herokuapp.com/portal/data")
       .then((response) => {
@@ -31,6 +36,8 @@ const App = () => {
       .catch((error) => {
         console.log(error);
       });
+  }, [dispatch]);
+  const fetchUserDataHandler = useCallback(async () => {
     if (localStorage.getItem("token")) {
       dispatch(
         userActions.login({
@@ -62,8 +69,8 @@ const App = () => {
           dispatch(
             userActions.addPathway({
               prediction: mlOutput.prediction,
-              mean: mlOutput.mean,
-              path: mlOutput.whole1[0].slice(1),
+              mean: "",
+              jobsAvailable: mlOutput.whole1,
             })
           );
         })
@@ -74,8 +81,11 @@ const App = () => {
   }, [dispatch, user.isLoggedIn, user.userAuthInfo.token]);
 
   useEffect(() => {
-    fetchUsersListHandler();
-  }, [fetchUsersListHandler]);
+    fetchUserDataHandler();
+  }, [fetchUserDataHandler]);
+  useEffect(() => {
+    fetchCareerDataHandler();
+  }, [fetchCareerDataHandler]);
   return (
     <Router>
       <Routes>
@@ -93,13 +103,19 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/predict-career" element={<CareerPrediction />} />
-        <Route path="/predict-career/pathway" element={<CareerPathway />} />
+        <Route path="/predict-career/pathway" element={<SamplePrediction />} />
         <Route path="/career-library" element={<CareerLibrary />} />
         <Route path="/career-library/:careerPath" element={<CareerDomain />} />
         <Route
           path="/career-library/:careerPath/:subDomain"
-          element={<DomainInfo />}
+          element={
+            <ThemeConfig>
+              <BaseOptionChartStyle />
+              <DomainInfo />
+            </ThemeConfig>
+          }
         />
+        <Route path="/search" element={<SearchResults />} />
       </Routes>
     </Router>
   );

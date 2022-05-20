@@ -10,7 +10,7 @@ const NavCard = (props) => {
   const cardClickHandler = () => {
     if (props.to === "/predict-career")
       if (user.isLoggedIn)
-        if (user.userPath.prediction.length || user.userPath.path.length)
+        if (user?.userPath?.prediction?.length || user?.userPath?.path?.length)
           navigate("/predict-career/pathway");
         else navigate("/predict-career");
       else {

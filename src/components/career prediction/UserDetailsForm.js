@@ -7,6 +7,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { userActions } from "../../store/user-slice";
 import { useNavigate } from "react-router-dom";
+import NumberQuestion from "./NumberQuestion";
 
 const radioQuestions = [
   {
@@ -166,6 +167,7 @@ const UserDetailsForm = () => {
           error={error}
           chosenInterest={answers["Area of interest"]}
         />
+        <NumberQuestion />
         {responseError ? (
           <div className={classes.responseError}>{responseError}</div>
         ) : null}

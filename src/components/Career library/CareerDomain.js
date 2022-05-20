@@ -1,8 +1,6 @@
 import { useParams } from "react-router-dom";
 import Dashboard from "../layout/Dashboard";
-import data from "../../data.json";
 import CareerCard from "./CareerCard";
-import classes from "./CareerDomain.module.css";
 import { Grid } from "@mui/material";
 import { useSelector } from "react-redux";
 
@@ -15,6 +13,7 @@ const cardColor = {
 };
 
 const CareerDomain = () => {
+  
   const { careerPath } = useParams();
   const careerLibraryData = useSelector(
     (state) => state.user.careerLibraryData

@@ -27,7 +27,7 @@ const RadioButton = ({
       <FormControl
         id={index}
         error={error && !selectedAnswer}
-        sx={{ margin: "1rem 0" }}
+        sx={{ margin: "2rem 0" }}
       >
         <FormLabel id="demo-radio-buttons-group-label">
           {headerLabel}*

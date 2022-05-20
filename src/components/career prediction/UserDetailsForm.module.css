@@ -171,7 +171,7 @@
 
 .formContainer .radioQuestions label {
   /* color: #000000; */
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .userDetailsForm_actions {
   display: flex;
@@ -191,7 +191,13 @@
   margin-top: 1.2rem;
   margin-bottom: -1.5rem;
 }
-
+.question label {
+  /* color: black; */
+  font-weight: 400 !important;
+}
+.question {
+  margin: 2rem 0 !important;
+}
 @keyframes opening {
   0% {
     opacity: 0;

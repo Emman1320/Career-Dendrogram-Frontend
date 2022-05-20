@@ -1,11 +1,13 @@
 import React from "react";
 import Dashboard from "../layout/Dashboard";
-import UserDetailsForm from "./UserDetailsForm";
+import UGPredictionForm from "./UGPredictionForm";
+// import UserDetailsForm from "./UserDetailsForm";
 
 const CareerPrediction = () => {
   return (
     <Dashboard smallText="" header="">
-      <UserDetailsForm />
+      {/* <UserDetailsForm /> */}
+      <UGPredictionForm />
     </Dashboard>
   );
 };

@@ -1,27 +1,27 @@
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import classes from "./Dashboard.module.css";
 import { useLocation, useParams } from "react-router-dom";
-import { useLayoutEffect, useState } from "react";
+import { Fragment, useLayoutEffect, useState } from "react";
 import NavCard from "../home/NavCard";
 
-const mdTheme = createTheme();
 let history = [];
 export default function Dashboard(props) {
   const [animation, setAnimation] = useState("");
-  const location = useLocation();
   const { careerPath, subDomain } = useParams();
+  const location = useLocation();
   useLayoutEffect(() => {
     history.push(location.pathname);
-
+    // console.log(location.pathname);
     if (
       location.pathname === "/predict-career" ||
       location.pathname ===
-        `/career-library/${careerPath?.replaceAll(
-          " ",
-          "%20"
-        )}/${subDomain?.replaceAll(" ", "%20")}`
+        `/career-library/${careerPath
+          ?.replaceAll(" ", "%20")
+          .replaceAll("|", "%7C")}/${subDomain
+          ?.replaceAll(" ", "%20")
+          .replaceAll("|", "%7C")}` ||
+      location.pathname === "/search"
     ) {
       if (history[history.length - 2]) {
         setAnimation(classes.predictCareer);
@@ -30,7 +30,8 @@ export default function Dashboard(props) {
       }
     } else if (
       location.pathname === "/" &&
-      history[history.length - 2] === "/predict-career"
+      (history[history.length - 2] === "/predict-career" ||
+        history[history.length - 2] === "/search")
     ) {
       setAnimation(classes.predictCareer_rev);
     }
@@ -53,27 +54,33 @@ export default function Dashboard(props) {
       } else if (location.pathname === "/login") {
         setAnimation(classes.signIn);
       } else if (
-        (location.pathname === "/predict-career/pathway" &&
-          history[history.length - 2] === "/predict-career") ||
-        location.pathname ===
-          `/career-library/${careerPath?.replaceAll(" ", "%20")}`
+        location.pathname === "/predict-career/pathway" &&
+        history[history.length - 2] === "/predict-career"
+        //   ||
+        // location.pathname ===
+        //   `/career-library/${careerPath
+        //     ?.replaceAll(" ", "%20")
+        //     .replaceAll("|", "%7C")}`
       ) {
         setAnimation(classes.predictCareer_rev);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
-  
+
   const enterOutAnimation = () => {
     setAnimation(classes.homeAnimation);
   };
   return (
-    <ThemeProvider theme={mdTheme}>
+    <Fragment>
       <div
         className={`${classes.dashboardContainer} ${animation} ${
           classes[careerPath?.split(" ")[0]]
-        } ${careerPath && classes.careerPath} ${subDomain && classes.subDomain}`}
+        } ${careerPath && classes.careerPath} ${
+          subDomain && classes.subDomain
+        }`}
       >
-        <Navbar onEnterOut={enterOutAnimation} pathname={location.pathname} />
+        <Navbar onEnterOut={enterOutAnimation} />
 
         <div className={classes.bottomContainer}>
           <h1>
@@ -111,6 +118,6 @@ export default function Dashboard(props) {
         </div>
       ) : null}
       <Footer />
-    </ThemeProvider>
+    </Fragment>
   );
 }

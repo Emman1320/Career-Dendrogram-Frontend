@@ -9,8 +9,12 @@ const userSlice = createSlice({
       mean: "",
       path: [],
       prediction: "",
+      jobsAvailable: [],
     },
     careerLibraryData: {},
+    searchCareerLibraryData: [],
+    searchResults: [],
+    filterText: "",
   },
   reducers: {
     login(state, action) {
@@ -34,11 +38,31 @@ const userSlice = createSlice({
     },
     addPathway(state, action) {
       state.userPath.mean = action.payload.mean;
-      state.userPath.path = action.payload.path;
       state.userPath.prediction = action.payload.prediction;
+      state.userPath.jobsAvailable = action.payload.jobsAvailable;
     },
     addCareerLibraryData(state, action) {
       state.careerLibraryData = action.payload.careerLibraryData;
+      const careerLibraryData = { ...state.careerLibraryData };
+      Object.keys(careerLibraryData).forEach((domain) => {
+        state.searchCareerLibraryData = [
+          ...state.searchCareerLibraryData,
+          ...careerLibraryData[domain].subDomains.map((subDomain) => {
+            subDomain.domainName = domain;
+            return subDomain;
+          }),
+        ];
+      });
+    },
+    search(state, action) {
+      state.filterText = action.payload;
+      state.searchResults = state.searchCareerLibraryData.filter(
+        (career) =>
+          career.name?.toLowerCase().includes(state.filterText.toLowerCase()) ||
+          career.domainName
+            ?.toLowerCase()
+            .includes(state.filterText.toLowerCase())
+      );
     },
   },
 });

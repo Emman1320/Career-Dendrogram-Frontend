@@ -20,7 +20,9 @@ const CareerCard = (props) => {
           navigate("/login");
         }, 400);
       }
-    else navigate(props.to);
+    else {
+      navigate(props.to);
+    }
   };
   return (
     <Grid item sx={{ width: 400, marginTop: "2.8rem" }}>

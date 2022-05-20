@@ -69,6 +69,12 @@
 .predictCareer_rev .smallText .inside {
   animation: enterIn 0.8s 0.8s cubic-bezier(0, 0, 0.1, 1) forwards;
 }
+.careerPath .smallText .inside {
+  transform: translateY(0);
+  opacity: 0;
+  animation: fade 0.8s 0.3s ease forwards;
+}
+
 .bottomContainer {
   display: flex;
   justify-content: center;
@@ -321,6 +327,10 @@
   letter-spacing: 0.1px;
   line-height: 1.6;
 }
+.subDomain .bottomContainer {
+  margin: auto !important;
+  padding: 2.3rem;
+}
 @media (min-width: 1400px) {
   .careerPath .bottomContainer {
     margin-left: 2rem;
@@ -351,7 +361,7 @@
     height: 70%;
   }
 }
-.Engineering {
+/* .Engineering {
   background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.45) 0%,
@@ -433,4 +443,17 @@
   background-repeat: no-repeat;
   backdrop-filter: blur(8px);
   background-size: cover;
+} */
+@media (min-width: 1550px) {
+  .bottomTriangle {
+    border-right: 97.3vw solid transparent;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

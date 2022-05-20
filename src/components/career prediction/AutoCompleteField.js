@@ -1,6 +1,7 @@
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
+import classes from "./UserDetailsForm.module.css";
 import { createTheme, ThemeProvider } from "@mui/material";
 
 const areaOfInterests = [
@@ -48,6 +49,7 @@ export default function AutocompleteField(props) {
         id="Area of interest"
         options={areaOfInterests}
         getOptionLabel={(option) => option.area}
+        className={classes.question}
         onChange={(event, newValue) => {
           props.onEnterInterest("Area of interest", newValue && newValue.value);
         }}
